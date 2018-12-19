@@ -1,0 +1,37 @@
+package com.codegym.task.task13.task1325;
+
+import java.awt.*;
+
+import static com.sun.javafx.iio.ios.IosImageLoader.GRAY;
+
+/* 
+Compiling the program
+
+*/
+
+public class Solution {
+
+    public static void main(String[] args) throws Exception {
+        Fox bigFox = new BigFox();
+        System.out.println(bigFox.getName());
+        System.out.println(bigFox.getColor());
+    }
+
+    public interface Animal {
+        Color getColor();
+    }
+
+    public static abstract class Fox implements Animal {
+
+        public String getName() {
+            return "Fox";
+        }
+    }
+
+    public static class BigFox extends Fox {
+        public Color getColor() {
+            return new Color(GRAY);
+        }
+    }
+
+}

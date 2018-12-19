@@ -1,0 +1,15 @@
+taskKey="com.codegym.task.task15.task1510"
+
+Be gone, all that is unnecessary!
+
+
+In the main method, remove the superfluous lines for which the add method is not implemented.
+
+
+Requirements:
+1.	There must be three add methods implemented in the Solution class.
+2.	The main method should not call the add method with the arguments &quot;1&quot; and 2d.
+3.	All of the Solution class&#39;s methods must be static.
+4.	All of the Solution class&#39;s methods must be public.
+
+
