@@ -7,6 +7,7 @@ Prices 2
 
 import java.io.*;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class Solution {
@@ -18,7 +19,7 @@ public class Solution {
         FileReader fr = new FileReader(fileName);
         BufferedReader brFile = new BufferedReader(fr);
 
-        Map<Integer, String> map = new HashMap<>();
+        Map<Integer, String> map = new LinkedHashMap<>();
         String line = null;
         int id = 0;
 
