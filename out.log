@@ -5040,3 +5040,72 @@ java.lang.NullPointerException
 2018-12-21 15:03:50 ERROR PluginManager.logErrorHeader(136) - OS: Windows 10
 2018-12-21 15:03:50 ERROR PluginManager.logErrorHeader(142) - Last Action: EditorCopy
 2018-12-21 20:25:25 ERROR ApacheHttpClient.processExceptionSendEvent(102) - (super) Error while sending the event to the server.
+2018-12-25 13:27:04 ERROR PluginManager.error(118) - Wrong offset: 1648; documentLength: 1646; s
+java.lang.IndexOutOfBoundsException: Wrong offset: 1648; documentLength: 1646; s
+	at com.intellij.openapi.editor.impl.DocumentImpl.insertString(DocumentImpl.java:455)
+	at com.intellij.execution.impl.ConsoleViewImpl.doInsertUserInput(ConsoleViewImpl.java:1477)
+	at com.intellij.execution.impl.ConsoleViewImpl.insertUserText(ConsoleViewImpl.java:1454)
+	at com.intellij.execution.impl.ConsoleViewImpl.type(ConsoleViewImpl.java:1194)
+	at com.intellij.execution.impl.ConsoleViewImpl.access$1400(ConsoleViewImpl.java:86)
+	at com.intellij.execution.impl.ConsoleViewImpl$MyTypedHandler.execute(ConsoleViewImpl.java:1165)
+	at com.intellij.openapi.editor.actionSystem.TypedAction$DefaultRawHandler$1.run(TypedAction.java:171)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runWriteAction(ApplicationImpl.java:1010)
+	at com.intellij.openapi.editor.actionSystem.TypedAction$DefaultRawHandler.lambda$execute$0(TypedAction.java:165)
+	at com.intellij.openapi.command.impl.CoreCommandProcessor.executeCommand(CoreCommandProcessor.java:149)
+	at com.intellij.openapi.command.impl.CoreCommandProcessor.executeCommand(CoreCommandProcessor.java:109)
+	at com.intellij.openapi.editor.actionSystem.TypedAction$DefaultRawHandler.execute(TypedAction.java:159)
+	at com.intellij.openapi.editor.impl.EditorFactoryImpl$MyTypedHandler.execute(EditorFactoryImpl.java:297)
+	at com.intellij.openapi.editor.actionSystem.TypedAction.lambda$actionPerformed$0(TypedAction.java:142)
+	at com.intellij.reporting.FreezeLoggerImpl.runUnderPerformanceMonitor(FreezeLoggerImpl.java:42)
+	at com.intellij.openapi.editor.actionSystem.TypedAction.actionPerformed(TypedAction.java:142)
+	at com.intellij.openapi.editor.impl.EditorImpl.processKeyTypedNormally(EditorImpl.java:1193)
+	at com.intellij.openapi.editor.impl.EditorImpl.processKeyTyped(EditorImpl.java:1181)
+	at com.intellij.openapi.editor.impl.EditorImpl.processKeyTyped(EditorImpl.java:3211)
+	at com.intellij.openapi.editor.impl.EditorImpl$7.keyTyped(EditorImpl.java:1012)
+	at java.awt.Component.processKeyEvent(Component.java:6496)
+	at javax.swing.JComponent.processKeyEvent(JComponent.java:2833)
+	at java.awt.Component.processEvent(Component.java:6318)
+	at java.awt.Container.processEvent(Container.java:2237)
+	at java.awt.Component.dispatchEventImpl(Component.java:4897)
+	at java.awt.Container.dispatchEventImpl(Container.java:2295)
+	at java.awt.Component.dispatchEvent(Component.java:4719)
+	at java.awt.KeyboardFocusManager.redispatchEvent(KeyboardFocusManager.java:1954)
+	at java.awt.DefaultKeyboardFocusManager.dispatchKeyEvent(DefaultKeyboardFocusManager.java:806)
+	at java.awt.DefaultKeyboardFocusManager.preDispatchKeyEvent(DefaultKeyboardFocusManager.java:1074)
+	at java.awt.DefaultKeyboardFocusManager.typeAheadAssertions(DefaultKeyboardFocusManager.java:945)
+	at java.awt.DefaultKeyboardFocusManager.dispatchEvent(DefaultKeyboardFocusManager.java:771)
+	at com.intellij.ide.IdeKeyboardFocusManager.dispatchEvent(IdeKeyboardFocusManager.java:27)
+	at java.awt.Component.dispatchEventImpl(Component.java:4768)
+	at java.awt.Container.dispatchEventImpl(Container.java:2295)
+	at java.awt.Window.dispatchEventImpl(Window.java:2746)
+	at java.awt.Component.dispatchEvent(Component.java:4719)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:764)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+	at java.awt.EventQueue$4.run(EventQueue.java:737)
+	at java.awt.EventQueue$4.run(EventQueue.java:735)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:734)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:837)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:739)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:434)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2018-12-25 13:27:04 ERROR PluginManager.logErrorHeader(126) - IntelliJ IDEA 2018.1  Build #IU-181.4203.550
+2018-12-25 13:27:04 ERROR PluginManager.logErrorHeader(133) - JDK: 1.8.0_152-release
+2018-12-25 13:27:04 ERROR PluginManager.logErrorHeader(134) - VM: OpenJDK 64-Bit Server VM
+2018-12-25 13:27:04 ERROR PluginManager.logErrorHeader(135) - Vendor: JetBrains s.r.o
+2018-12-25 13:27:04 ERROR PluginManager.logErrorHeader(136) - OS: Windows 10
+2018-12-25 14:04:15 ERROR ApacheHttpClient.processExceptionSendEvent(102) - (super) Error while sending the event to the server.
+2018-12-27 15:40:06 ERROR ApacheHttpClient.processExceptionSendEvent(102) - (super) Error while sending the event to the server.
+2018-12-27 17:57:15 ERROR ApacheHttpClient.processExceptionSendEvent(102) - (super) Error while sending the event to the server.
+2018-12-27 20:47:05 ERROR ApacheHttpClient.processExceptionSendEvent(102) - (super) Error while sending the event to the server.
